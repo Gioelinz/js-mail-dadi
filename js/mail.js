@@ -8,9 +8,9 @@ const mails = ['fizzbuzz@gmail.com', 'fizz@gmail.com', 'buzz@gmail.com'];
 let mailAnswer = prompt('Inserisci la tua mail', 'fizz@gmail.com');
 
 for (let i = 0; i < mails.length; i++) {
-    if (mailAnswer == mails) {
+    if (mailAnswer == mails[i]) {
         console.log('Controllo Ok, Puoi accedere!')
-    } else {
+    } else if (!(mailAnswer == mails[i])) {
         console.log('La mail non è stata trovata nella lista, riprova!')
     }
 }
